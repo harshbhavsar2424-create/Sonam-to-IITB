@@ -71,14 +71,14 @@
 
     <script>
         // REPLACE WITH YOUR FIREBASE URL
-        const DB_URL = "https://iitb-squad-default-rtdb.asia-southeast1.firebasedatabase.app/"; 
+        const DB_URL = "https://your-project-default-rtdb.firebaseio.com/"; 
 
         let clickCount = 0;
         function adminClick() {
             clickCount++;
             if (clickCount === 5) {
                 const password = prompt("Host Password:");
-                if (password === "HarshOP") showAdminPanel();
+                if (password === "IITB2026") showAdminPanel();
                 clickCount = 0;
             }
             setTimeout(() => { clickCount = 0; }, 3000);
